@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #666;
+}
+
+.dashboard {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.dashboard-container h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h2 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.dashboard-card p {
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.dashboard-link {
+  background-color: #667eea;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.dashboard-link:hover {
+  background-color: #764ba2;
+}
